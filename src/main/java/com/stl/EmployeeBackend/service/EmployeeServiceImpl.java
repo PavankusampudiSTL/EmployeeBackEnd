@@ -69,7 +69,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 		existingEmployee.setLastname(employee.getLastname());
 		existingEmployee.setEmail(employee.getEmail());
 		existingEmployee.setPhonenumber(employee.getPhonenumber());
-		existingEmployee.setPassword(employee.getPassword());
+		//existingEmployee.setPassword(employee.getPassword());
 //		existingEmployee.setAddressline1(employee.getAddressline1());
 //		existingEmployee.setAddressline2(employee.getAddressline2());
 //		existingEmployee.setCity(employee.getCity());

@@ -68,8 +68,8 @@ public class EmployeeController {
 	//Update Employee
 	@PutMapping("/update/{email}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable("email") String email,@RequestBody Employee employee){
-		String pass = employee.getPassword();
-		employee.setPassword(new BCryptPasswordEncoder().encode(pass));
+//		String pass = employee.getPassword();
+//		employee.setPassword(new BCryptPasswordEncoder().encode(pass));
 		return new ResponseEntity<Employee> (employeeService.updateEmployee(employee, email),HttpStatus.OK);
 	}
 
